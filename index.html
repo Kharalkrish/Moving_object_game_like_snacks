@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.CSS" rel=" stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-indigo-800" onload="startGame()">
+    <div class="bg-gradient-to-r from-indigo-900 to-indigo-600 w-screen h-[100vh] text-center ">
+        <h1 class="text-3xl text-black font-semibold capitalize bg-gradient-to-r from-indigo-900 to-indigo-400 p-4">Play Now</h1>
+        <div class="flex justify-between items-center px-3 w-full h-96 animate-pulse" >
+            <div class="object1 bg-red-600 to-lime-200 shadow rounded py-4 px-5" style="width: 70px;height: 70px;"></div>
+            <div class="object2 bg-white py-4 rounded shadow px-5" style="width: 70px;height: 70px;"></div>
+        </div>
+
+        <div class="flex justify-center items-center absolute bottom-0 left-0 right-0">
+            <button class="py-2 px-4 bg-indigo-600 shadow m-3 text-white rounded-md outline-none border-none"
+                onclick="moveup()">UP</button><br><br>
+            <button class="py-2 px-4 bg-indigo-600 shadow m-3 text-white rounded-md outline-none border-none" onclick="moveleft()">LEFT</button>
+            <button class="py-2 px-4 bg-indigo-600 shadow m-3 text-white rounded-md outline-none border-none"
+                onclick="moveright()">RIGHT</button><br><br>
+            <button class="py-2 px-4 bg-indigo-600 shadow m-3 text-white rounded-md outline-none border-none" onclick="movedown()">DOWN</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
